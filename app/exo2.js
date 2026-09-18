@@ -23,3 +23,20 @@ export function Ranger(T) {
 
 let test1 = [0, 1, 0, 0, 1, 0];
 console.log("Result : ", Ranger(test1));
+
+export function NombreUn(tableau) {
+    let count = 0;
+
+    for (let i = 0; i < tableau.length; i++) {
+        if (tableau[i] === 1) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+let test2 = [0,0,0,0,1,1,1];
+console.log("Resultat: ", NombreUn(test2));
+
+
